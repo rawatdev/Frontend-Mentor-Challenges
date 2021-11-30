@@ -1,0 +1,83 @@
+.card {
+  background-color: $cardColor;
+  width: 330px;
+  height: 550px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  font-family: inherit;
+
+  &-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: $white;
+  }
+
+  .card-text {
+    margin-top: 20px;
+    color: $softBlue;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 14px;
+  font-size: 14px;
+
+  .coin-price {
+    display: flex;
+    align-items: center;
+    color: $cyan;
+    img {
+      width: 12px;
+      height: 16px;
+      margin-right: 5px;
+    }
+  }
+
+  .time-left {
+    display: flex;
+    align-items: center;
+    color: $softBlue;
+    img {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+}
+
+hr.line {
+  border: 0;
+  border-top: 1px solid $lineColor;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 16px;
+  color: $softBlue;
+
+  img {
+    width: 33px;
+    margin-right: 16px;
+  }
+
+  span {
+    color: $white;
+  }
+}
