@@ -6,11 +6,47 @@
   padding: 25px;
   border-radius: 10px;
   font-family: inherit;
+  box-shadow: 1px 34px 5px 14px rgba(0, 0, 0, 0.1);
 
   &-img {
+    position: relative;
     width: 280px;
     height: 280px;
-    border-radius: 10px;
+    cursor: pointer;
+
+    .view {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+    }
+
+    &:hover .view {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 30px;
+      background-color: $cyan;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 200ms ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 0.5;
+    }
   }
 
   .card-title {
@@ -18,6 +54,12 @@
     font-size: 20px;
     font-weight: 600;
     color: $white;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $cyan;
+    }
   }
 
   .card-text {
@@ -79,5 +121,11 @@ hr.line {
 
   span {
     color: $white;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $cyan;
+    }
   }
 }
