@@ -6,7 +6,8 @@
   padding: 25px;
   border-radius: 10px;
   font-family: inherit;
-  box-shadow: 1px 34px 5px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 34px 5px 14px rgba(0, 0, 0, 0.08),
+    1px 1px 0px 20px rgba(0, 0, 0, 0.04);
 
   &-img {
     position: relative;
@@ -130,6 +131,28 @@ hr.line {
 
     &:hover {
       color: $cyan;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .card {
+    width: 350px;
+    height: 600px;
+    box-shadow: 1px 18px 5px 12px rgba(0, 0, 0, 0.08),
+      1px 1px 0px 48px rgba(0, 0, 0, 0.04);
+
+    &-img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .card-text {
+      font-size: 18px;
+    }
+
+    .card-meta {
+      margin-bottom: 22px;
     }
   }
 }
