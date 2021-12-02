@@ -1,0 +1,28 @@
+.btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 16px 0;
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: $paleBlue;
+  background-color: $brightBlue;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.btn-secondary {
+  color: $desaturatedBlue;
+  background-color: transparent;
+  transition: color 200ms ease-in-out;
+
+  &:hover {
+    color: $darkBlue;
+  }
+}
